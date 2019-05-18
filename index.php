@@ -14,7 +14,7 @@
     <header>
     </header>
     <body>
-        <div class="centralizar">
+        <div>
             <div id="caixa-cadastro" class="float-left">
                 <h3>Novo Usuário</h3>
                 <form method="POST" action="index.php">
@@ -55,27 +55,6 @@
 </html>
 
 <style>
-    .mensagemValidacao{
-        color: red;
-        font-weight: bold;
-    }
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    .box {
-        float: left;
-        width: 50%;
-    }
-    .box input{
-        width: 90%;
-    }
-    *{
-        box-sizing: border-box;
-    }
-
-    /* Caixa Login */
     #caixa-login{
         padding: 5px;
         border: 1px solid black;
