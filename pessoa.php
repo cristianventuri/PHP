@@ -13,15 +13,17 @@
         </div>
         <div align="center">
             <div id="caixa">
-                <h3>Login</h3>
-                <form method="POST" action="produto.php">
+                <h3>Cadastro Pessoas</h3>
+                <form method="POST" action="index.php">
+                    <label>Usuário:</label>
+                    <input type="text" name="nome" value="" required>
+
                     <label>E-mail:</label>
                     <input type="text" name="email" required>
 
                     <label>Senha:</label>
                     <input type="password" name="senha" required>
-                    <button name="button">Cacasdtra</button>
-                    <input type="submit" name="btnSubmit" value="Enviar">
+                    <input type="submit" name="btnSubmit" value="Cadastrar">
                 </form>
             </div>
         </div>
