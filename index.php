@@ -6,63 +6,52 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8"/>
-    <title>Index</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<header>
-    <?php
-    $_SESSION['menu_selecionado'] = 'Home';
-    include('menu.php');
-    ?>
-</header>
-<body>
-<?php
-if(!isset($_SESSION['usuario_logado']))
-{
-    ?>
-    <div class="centralizar">
-        <div id="caixa-cadastro" class="float-left">
-            <h3>Novo Usuário</h3>
-            <form method="POST" action="index.php">
-                <label>Usuário:</label>
-                <input type="text" name="nome" value="<?= isset($_REQUEST['nome']) ? $_REQUEST['nome'] : '' ?>" required><br>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Index</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <header>
+    </header>
+    <body>
+        <div class="centralizar">
+            <div id="caixa-cadastro" class="float-left">
+                <h3>Novo Usuário</h3>
+                <form method="POST" action="index.php">
+                    <label>Usuário:</label>
+                    <input type="text" name="nome" value="<?= isset($_REQUEST['nome']) ? $_REQUEST['nome'] : '' ?>" required><br>
 
-                <label>E-mail:</label><br>
-                <input type="email" name="email" value="<?= isset($_REQUEST['email']) ? $_REQUEST['email'] : '' ?>" required><br>
+                    <label>E-mail:</label><br>
+                    <input type="email" name="email" value="<?= isset($_REQUEST['email']) ? $_REQUEST['email'] : '' ?>" required><br>
 
-                <div class="clearfix">
-                    <div class="box">
-                        <label>Senha:</label>
-                        <input type="password" name="senha" required>
+                    <div class="clearfix">
+                        <div class="box">
+                            <label>Senha:</label>
+                            <input type="password" name="senha" required>
+                        </div>
+                        <div class="box">
+                            <label>Confirmação:</label>
+                            <input type="password" name="confirmacao_senha" required>
+                        </div>
                     </div>
-                    <div class="box">
-                        <label>Confirmação:</label>
-                        <input type="password" name="confirmacao_senha" required>
-                    </div>
-                </div>
-                <span class="mensagemValidacao"><?= ($mensagemValidacaoCadastro) ?></span>
-                <input type="submit" name="btnSubmit" class="botao" value="Gravar"><br>
-            </form>
-        </div>
-        <div id="caixa-login" class="float-left">
-            <h3>Entrar</h3>
-            <form method="POST" action="index.php">
-                <label>E-mail:</label>
-                <input type="text" name="email" required><br>
+                    <span class="mensagemValidacao"><?= ($mensagemValidacaoCadastro) ?></span>
+                    <input type="submit" name="btnSubmit" class="botao" value="Gravar"><br>
+                </form>
+            </div>
+            <div id="caixa-login" class="float-left">
+                <h3>Entrar</h3>
+                <form method="POST" action="index.php">
+                    <label>E-mail:</label>
+                    <input type="text" name="email" required><br>
 
-                <label>Senha:</label><br>
-                <input type="password" name="senha" required>
-                <input type="submit" name="btnSubmit" class="botao" value="Entrar">
-                <span class="mensagemValidacao"><?= ($mensagemValidacao) ?></span>
-            </form>
+                    <label>Senha:</label><br>
+                    <input type="password" name="senha" required>
+                    <input type="submit" name="btnSubmit" class="botao" value="Entrar">
+                    <span class="mensagemValidacao"><?= ($mensagemValidacao) ?></span>
+                </form>
+            </div>
         </div>
-    </div>
-    <?php
-}
-?>
-</body>
+    </body>
 </html>
 
 <style>
