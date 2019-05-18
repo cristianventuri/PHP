@@ -20,9 +20,11 @@
 
                     <label>Senha:</label>
                     <input type="password" name="senha" required>
-                    <button name="button">Cacasdtra</button>
                     <input type="submit" name="btnSubmit" value="Enviar">
                 </form>
+                <a href="pessoa.php">
+                    <button> Cadastrar </button>
+                </a>
             </div>
         </div>
     </body>
@@ -49,6 +51,10 @@
     #caixa form input[type="password"]{
         width: 100%;
         margin-bottom: 10px;
+    }
+    button {
+        width: 40%;
+        margin-top: 10px;
     }
     #caixa form input[type="submit"]{
         width: 40%;
