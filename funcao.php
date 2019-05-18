@@ -1,9 +1,24 @@
 <?php
-    $nome = "Cristian"." "."Venturi";
-    $pessoas = array("0-zero","1-um","2-dois");
+//array para json
+$pessoas = array();
+
+array_push($pessoas, array(
+    'nome'=>'Cristian',
+    'idade'=>23
+));
+
+array_push($pessoas, array(
+    'nome'=>'Cris',
+    'idade'=>25
+));
+
+echo json_encode($pessoas);
+
+//json para array
+$json = '[{"nome":"Cristian","idade":23},{"nome":"Cris","idade":25}]';
+$data = json_decode($json, true);
+
+print_r($data);
 
 
 
-    var_dump($nome);
-    echo $nome;
-    echo $pessoas[2];
