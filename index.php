@@ -1,8 +1,3 @@
-<?php
-    echo "Hello World";
-
-    ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +7,11 @@
     <header>
     </header>
     <body>
+        <div id="opcoes-menu">
+            <a href="index.php">Home</a>
+            <a href="produtos.php">Produtos</a>
+            <a href="carrinho.php" >Carrinho</a>
+        </div>
         <div align="center">
             <div id="caixa">
                 <h3>Cadastro Pessoas</h3>

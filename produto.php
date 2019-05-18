@@ -12,6 +12,11 @@
     <header>
     </header>
     <body>
+        <div id="opcoes-menu">
+            <a href="index.php">Home</a>
+            <a href="produtos.php">Produtos</a>
+            <a href="carrinho.php" >Carrinho</a>
+        </div>
         <div align="center">
             <div id="caixa">
                 <h3>Cadastro Produtos</h3>
@@ -19,7 +24,7 @@
                     <label>Produto:</label>
                     <input type="text" name="produto" value="" required>
 
-                    <label>Quantiade:</label>
+                    <label>Quantidade:</label>
                     <input type="text" name="qtd" required>
 
                     <label>Valor:</label>
@@ -46,10 +51,6 @@
         float left;
     }
     #caixa form input[type="text"]{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #caixa form input[type="password"]{
         width: 100%;
         margin-bottom: 10px;
     }
