@@ -14,17 +14,17 @@
     <body>
         <div align="center">
             <div id="caixa">
-                <h3>Cadastro Pessoas</h3>
+                <h3>Cadastro Produtos</h3>
                 <form method="POST" action="index.php">
-                    <label>Usuário:</label>
-                    <input type="text" name="nome" value="" required>
+                    <label>Produto:</label>
+                    <input type="text" name="produto" value="" required>
 
-                    <label>E-mail:</label>
-                    <input type="text" name="email" required>
+                    <label>Quantiade:</label>
+                    <input type="text" name="qtd" required>
 
-                    <label>Senha:</label>
-                    <input type="password" name="senha" required>
-                    <input type="submit" name="btnSubmit" class="botao" value="Entrar">
+                    <label>Valor:</label>
+                    <input type="text" name="vlr" required>
+                    <input type="submit" name="btnSubmit" value="Cadastrar">
                 </form>
             </div>
         </div>

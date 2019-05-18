@@ -24,7 +24,7 @@
 
                     <label>Senha:</label>
                     <input type="password" name="senha" required>
-                    <input type="submit" name="btnSubmit" class="botao" value="Entrar">
+                    <input type="submit" name="btnSubmit" value="Cadastrar">
                 </form>
             </div>
         </div>
@@ -36,7 +36,7 @@
     .box input{
         width: 90%;
     }
-    /* Caixa Login */
+    /* Caixa */
     #caixa{
         padding: 5px;
         border: 1px solid black;
