@@ -36,7 +36,7 @@
     .box input{
         width: 90%;
     }
-    /* Caixa Login */
+    /* Caixa */
     #caixa{
         padding: 5px;
         border: 1px solid black;
