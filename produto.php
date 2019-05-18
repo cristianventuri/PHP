@@ -14,8 +14,7 @@
     <body>
         <div id="opcoes-menu">
             <a href="index.php">Home</a>
-            <a href="produtos.php">Produtos</a>
-            <a href="carrinho.php" >Carrinho</a>
+            <a href="produto.php">Produtos</a>
         </div>
         <div align="center">
             <div id="caixa">
