@@ -14,13 +14,16 @@
         <div align="center">
             <div id="caixa">
                 <h3>Login</h3>
-                <form method="POST" action="produto.php">
-                    <label>E-mail:</label>
-                    <input type="text" name="email" required>
-
-                    <label>Senha:</label>
-                    <input type="password" name="senha" required>
-                    <input type="submit" name="btnSubmit" value="Enviar">
+                <form method="POST" action="conexaoPessoa.php">
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="text" name="email" required>
+                    </div>
+                    <div>
+                        <label>Senha:</label>
+                        <input type="password" name="senha" required>
+                    </div>
+                    <button class="btn" type="submit" name="salva" >Login</button>
                 </form>
                 <a href="pessoa.php">
                     <button> Cadastrar </button>

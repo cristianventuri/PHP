@@ -1,3 +1,4 @@
+<?php include_once "conexaoPessoa.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,35 +15,58 @@
         <div align="center">
             <div id="caixa">
                 <h3>Cadastro Pessoas</h3>
-                <form method="POST" action="index.php">
-                    <label>Usuário:</label>
-                    <input type="text" name="nome" value="" required>
-
-                    <label>E-mail:</label>
-                    <input type="text" name="email" required>
-
-                    <label>Senha:</label>
-                    <input type="password" name="senha" required>
-                    <input type="submit" name="btnSubmit" value="Cadastrar">
+                <form method="POST" action="conexaoPessoa.php">
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" required>
+                    </div>
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="text" name="email" required>
+                    </div>
+                    <div>
+                        <label>Senha:</label>
+                        <input type="password" name="senha" required>
+                    </div>
+                    <button class="btn" type="submit" name="salva" >Salvar</button>
                 </form>
-            </div>
+            <div>
+        </div>
+        <div>
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Senha</th>
+                    <th colspan="2">Ação</th>
+                </tr>
+                </thead>
+                <?php while ($row = mysqli_fetch_array($results)) { ?>
+                    <tr>
+                        <td><?php echo $row['nome']; ?></td>
+                        <td><?php echo $row['email']; ?></td>
+                        <td><?php echo $row['senha']; ?></td>
+                        <td>
+                            <a href="index.php?edit=<?php echo $row['nome']; ?>" class="edit_btn" >Editar</a>
+                        </td>
+                        <td>
+                            <a href="conexaoPessoa.php?excluir=<?php echo $row['id']; ?>" class="del_btn">Excluir</a>
+                        </td>
+                    </tr>
+                <?php } ?>
+            </table>
         </div>
     </body>
 </html>
 
 <style>
+    table{
+        margin-top: 20px;
+        width 100%;
     }
-    .box input{
-        width: 90%;
-    }
-    /* Caixa */
     #caixa{
-        padding: 5px;
-        border: 1px solid black;
-        width:300px;
-        padding-bottom: 30px;
-        margin: 10px 10px 10px 0px;
-        float left;
+        width:400px;
     }
     #caixa form input[type="text"]{
         width: 100%;
