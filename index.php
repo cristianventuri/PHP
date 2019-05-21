@@ -9,12 +9,12 @@
     <body>
         <div id="opcoes-menu">
             <a href="index.php">Home</a>
-            <a href="produto.php">Produtos</a>
+            <a href="addProduto.php">Produtos</a>
         </div>
         <div align="center">
             <div id="caixa">
                 <h3>Login</h3>
-                <form method="POST" action="conexaoPessoa.php">
+                <form method="POST" action="pessoa.php">
                     <div>
                         <label>E-mail:</label>
                         <input type="text" name="email" required>
@@ -25,7 +25,7 @@
                     </div>
                     <button class="btn" type="submit" name="salva" >Login</button>
                 </form>
-                <a href="pessoa.php">
+                <a href="addPessoa.php">
                     <button> Cadastrar </button>
                 </a>
             </div>
