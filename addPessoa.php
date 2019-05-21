@@ -15,7 +15,7 @@
         <div align="center">
             <div id="caixa">
                 <h3>Cadastro Pessoas</h3>
-                <form method="POST" action="pessoa.php">
+                <form method="POST" action="addPessoa.php">
                     <div>
                         <label>Nome:</label>
                         <input type="text" name="nome" required>
