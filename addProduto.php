@@ -33,12 +33,14 @@
         <div>
         </div>
         <div>
-            <?php
-            if(isset($_SESSION['message'])){
-                echo $_SESSION['message'];
-                unset($_SESSION['message']);
-            }
-            ?>
+            <p>
+                <?php
+                if(isset($_SESSION['message'])){
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                }
+                ?>
+            </p>
             <table border="1">
                 <thead>
                 <tr>
@@ -85,5 +87,9 @@
     #caixa form input[type="submit"]{
         width: 40%;
         margin-top: 10%;
+    }
+    p{
+        margin-top: 20px;
+        color: green;
     }
 </style>
