@@ -23,7 +23,7 @@
                         <label>Senha:</label>
                         <input type="password" name="senha" required>
                     </div>
-                    <button class="btn" type="submit" name="salva" >Login</button>
+                    <button class="btn" type="submit" name="" >Login</button>
                 </form>
                 <a href="addPessoa.php">
                     <button> Cadastrar </button>
