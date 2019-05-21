@@ -9,7 +9,8 @@
     <body>
         <div id="opcoes-menu">
             <a href="index.php">Home</a>
-            <a href="addProduto.php">Produtos</a>
+            <a href="pessoa.php">Pessoas</a>
+            <a href="produto.php">Produtos</a>
         </div>
         <div align="center">
             <div id="caixa">
@@ -25,7 +26,7 @@
                     </div>
                     <button class="btn" type="submit" name="" >Login</button>
                 </form>
-                <a href="addPessoa.php">
+                <a href="pessoa.php">
                     <button> Cadastrar </button>
                 </a>
             </div>
