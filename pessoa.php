@@ -44,7 +44,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Index</title>
+    <title>Pessoa</title>
 </head>
 <header>
 </header>

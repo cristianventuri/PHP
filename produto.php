@@ -43,7 +43,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Index</title>
+    <title>Produto</title>
 </head>
 <header>
 </header>
