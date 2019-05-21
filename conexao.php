@@ -1,3 +1,3 @@
 <?php
     session_start();
-    $data = mysqli_connect('localhost', 'root', '', 'uniasselvi');
+    $conexao = mysqli_connect('localhost', 'root', '', 'uniasselvi');

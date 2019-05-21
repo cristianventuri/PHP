@@ -50,7 +50,7 @@
                     <th colspan="2">Ação</th>
                 </tr>
                 </thead>
-                <?php while ($row = mysqli_fetch_array($results)) { ?>
+                <?php while ($row = mysqli_fetch_array($resultado)) { ?>
                     <tr>
                         <td><?php echo $row['nome']; ?></td>
                         <td><?php echo $row['email']; ?></td>
