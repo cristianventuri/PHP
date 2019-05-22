@@ -7,10 +7,14 @@
     <header>
     </header>
     <body>
-        <div id="opcoes-menu">
-            <a href="index.php">Home</a>
-            <a href="pessoa.php">Pessoas</a>
-            <a href="produto.php">Produtos</a>
+        <div align="center">
+            <table border="1 black">
+                <tr>
+                    <th><a href="index.php">Home</a></th>
+                    <th><a href="pessoa.php">Pessoas</a></th>
+                    <th><a href="produto.php">Produtos</a></th>
+                </tr>
+            </table>
         </div>
         <div align="center">
             <div id="caixa">
