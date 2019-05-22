@@ -41,58 +41,59 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8"/>
-    <title>Produto</title>
-</head>
-<header>
-</header>
-<body>
-<div id="opcoes-menu">
-    <a href="index.php">Home</a>
-    <a href="pessoa.php">Pessoas</a>
-    <a href="produto.php">Produtos</a>
-</div>
-<div align="center">
-    <div id="caixa">
-        <h3>Cadastro Produtos</h3>
-        <form method="POST" action="produto.php">
-            <input type="hidden" name="id" value="<?php echo $id?>">
-            <div>
-                <label>Produto:</label>
-                <input type="text" name="produto" value="<?php echo $produto?>" required>
-            </div>
-            <div>
-                <label>Quantidade:</label>
-                <input type="text" name="quantidade" value="<?php echo $quantidade?>" required>
-            </div>
-            <div>
-                <label>Valor:</label>
-                <input type="text" name="valor" value="<?php echo $valor?>" required>
-            </div>
-            <button class="btn" type="submit" name="salva" >Salvar</button>
-        </form>
-        <div>
-        </div>
-        <div>
-            <p>
-                <?php
-                if(isset($_SESSION['message'])){
-                    echo $_SESSION['message'];
-                    unset($_SESSION['message']);
-                }
-                ?>
-            </p>
-            <table border="1">
-                <thead>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Produto</title>
+    </head>
+    <header>
+    </header>
+    <body>
+        <div align="center">
+            <table border="1 black">
                 <tr>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Valor</th>
-                    <th colspan="2">Ação</th>
+                    <th><a href="index.php">Home</a></th>
+                    <th><a href="pessoa.php">Pessoas</a></th>
+                    <th><a href="produto.php">Produtos</a></th>
                 </tr>
-                </thead>
-                <?php while ($row = mysqli_fetch_array($resultado)) { ?>
+            </table>
+        </div>
+        <div align="center">
+            <div id="caixa">
+                <h3>Cadastro Produtos</h3>
+                <form method="POST" action="produto.php">
+                    <input type="hidden" name="id" value="<?php echo $id?>">
+                    <div>
+                        <label>Produto:</label>
+                        <input type="text" name="produto" value="<?php echo $produto?>" required>
+                    </div>
+                    <div>
+                        <label>Quantidade:</label>
+                        <input type="text" name="quantidade" value="<?php echo $quantidade?>" required>
+                    </div>
+                    <div>
+                        <label>Valor:</label>
+                        <input type="text" name="valor" value="<?php echo $valor?>" required>
+                    </div>
+                    <button class="btn" type="submit" name="salva" >Salvar</button>
+                </form>
+            </div>
+            <div>
+                <p>
+                    <?php
+                    if(isset($_SESSION['message'])){
+                        echo $_SESSION['message'];
+                        unset($_SESSION['message']);
+                    }
+                    ?>
+                </p>
+                <table border="1">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                        <th colspan="2">Ação</th>
+                    </tr>
+                    <?php while ($row = mysqli_fetch_array($resultado)) { ?>
                     <tr>
                         <td><?php echo $row['produto']; ?></td>
                         <td><?php echo $row['quantidade']; ?></td>
@@ -104,10 +105,11 @@
                             <a href="produto.php?excluir=<?php echo $row['id']; ?>" class="del_btn">Excluir</a>
                         </td>
                     </tr>
-                <?php } ?>
-            </table>
+                    <?php } ?>
+                </table>
+            </div>
         </div>
-</body>
+    </body>
 </html>
 
 <style>
